@@ -1,36 +1,52 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, avoid_unnecessary_containers
 
 import 'package:flutter/material.dart';
-import 'package:wall_it/login_screen.dart';
+import 'package:get/get_navigation/get_navigation.dart';
+import 'package:wall_it/home_screen.dart';
+import 'package:wall_it/login/login_screen.dart';
 
-import 'onboarding_screen.dart';
+import 'login/login_controller.dart';
+import 'onboard_screens/onboarding_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class MyApp extends StatefulWidget {
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  bool logCheck = false;
+
+  getLogStatus() {
+    LocalData.getLoginInfo().then((value) {
+      setState(() {
+        logCheck = value!;
+      });
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    getLogStatus();
+    print(logCheck);
+  }
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
+
         primarySwatch: Colors.blue,
         fontFamily: "Poppins",
       ),
-      home: OnBoardScreen(),
+      home: logCheck ? HomeScreen() : LoginScreen(),
     );
   }
 }

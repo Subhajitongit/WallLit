@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "845115032124",
+    "project_id": "walllit",
+    "storage_bucket": "walllit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845115032124:android:4f7224556d881b3e40b939",
+        "android_client_info": {
+          "package_name": "com.example.wall_it"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "845115032124-qulof11e5r9ji9ui6i7vilcsu37qhn0q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeoin2CJe4JJzwlk2TiLBRg0_bY91vB68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "845115032124-qulof11e5r9ji9ui6i7vilcsu37qhn0q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

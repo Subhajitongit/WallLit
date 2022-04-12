@@ -3,9 +3,9 @@
 import 'package:concentric_transition/page_view.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:wall_it/hh.dart';
-import 'package:wall_it/login_screen.dart';
-import 'package:wall_it/onboard_data.dart';
+import 'package:wall_it/home_screen.dart';
+import 'package:wall_it/login/login_screen.dart';
+import 'package:wall_it/onboard_screens/onboard_data.dart';
 
 class OnBoardScreen extends StatelessWidget {
   OnBoardScreen({Key? key}) : super(key: key);
@@ -51,7 +51,7 @@ class OnBoardScreen extends StatelessWidget {
         },
         onFinish: () {
           Navigator.pushReplacement(
-              context, MaterialPageRoute(builder: (context) => LoginScreen()));
+              context, MaterialPageRoute(builder: (context) => HomeScreen()));
         },
       ),
     );

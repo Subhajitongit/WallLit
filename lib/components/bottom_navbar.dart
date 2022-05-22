@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:wall_it/Liked.dart';
 import 'package:wall_it/profile.dart';
 
 class BottomNavBar extends StatelessWidget {
@@ -30,13 +31,19 @@ class BottomNavBar extends StatelessWidget {
               color: Colors.white,
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const LikedScreen()));
+              },
               icon: const Icon(CupertinoIcons.heart_fill),
               color: Colors.white,
             ),
             IconButton(
-              onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=> const Profile()));
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const Profile()));
               },
               icon: const Icon(CupertinoIcons.profile_circled),
               color: Colors.white,

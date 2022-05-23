@@ -14,4 +14,4 @@ A mobile and web application that gives you the access of more than 50,000+ wall
     -Category search 
     -Beautiful UI
 
-<img src="https://drive.google.com/drive/u/0/my-drive" />
+<img src="https://ibb.co/L9L4ccN" />

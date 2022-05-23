@@ -1,16 +1,17 @@
-# wall_it
+# WallLit
 
-A new Flutter project.
+A mobile and web application that gives you the access of more than 50,000+ wallpapers that make your screen look great😎🔥
 
-## Getting Started
+## Tech Used
 
-This project is a starting point for a Flutter application.
+    -Flutter
+    -Dart
+    -Firebase
 
-A few resources to get you started if this is your first Flutter project:
+## Features
+    -Google Signin
+    -50,000+ wallpapers to choose from
+    -Category search 
+    -Beautiful UI
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    walllit.png

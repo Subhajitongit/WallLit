@@ -14,4 +14,4 @@ A mobile and web application that gives you the access of more than 50,000+ wall
     -Category search 
     -Beautiful UI
 
-    walllit.png
+walllit.png

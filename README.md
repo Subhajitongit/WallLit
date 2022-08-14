@@ -1,4 +1,4 @@
-# WallLit
+# WallLit V1.0.0
 
 A mobile and web application that gives you the access of more than 50,000+ wallpapers that make your screen look great😎🔥
 
